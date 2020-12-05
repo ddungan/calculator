@@ -26,7 +26,7 @@ function onDigitClick() {
         nextValue = nextValue + digit;
     }
 
-    if (heldValue !== null && heldOperation === null) {
+    if (heldValue !== null && heldOperation == null) {
         heldValue = null;
       }
     
@@ -58,28 +58,28 @@ function onClearEntryClick() {
 $('.clear-entry').click(onClearEntryClick);
 
 function add(x, y) {
-    z = x + y
-    return z
+    z = Number(x) + Number(y);
+    return z;
 }
 
 function subtract(x, y) {
-    z =  x - y
-    return z
+    z =  Number(x) - Number(y);
+    return z;
 }
 
 function multiply(x, y) {
-    z = x * y
-    return z
+    z = Number(x) * Number(y);
+    return z;
 }
 
 function divide(x, y) {
-    z = x / y
-    return z
+    z = Number(x) / Number(y);
+    return z;
 }
 
 function power(x, y) {
-    z = x ** y
-    return z
+    z = Number(x) ** Number(y);
+    return z;
 }
 
 function setHeldOperation(operation) {
