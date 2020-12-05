@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Coda|Codystar|Jacques+Francois+Shadow|Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="app.js"></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main id="app">
+      <h1>
+        Calculator
+      </h1>
+      <div class="all">
+      <div class="extra">
+        <section class="display">
+          <div class="held-label">Running Total</div>
+          <div class="held-value"></div>
+          <div class="next-operation"></div>
+          <div class="next-value"></div>
+        </section>
+        <section class="extra-controls">
+          <section class="extra-memory">
+            <button id="store-mem">STORE MEM</button>
+            <button id="clear-mem">CLEAR MEM</button>
+          </section>
+          <section class="extra-operations">
+            <button id="pi">&#960</button>
+            <button id="mem">Mem</button>
+            <button id="sq">x<sup>2</sup></button>
+            <button id="cu">x<sup>3</sup></button>
+            <button id="sq-root">&#8730;</button>
+            <button id="cu-root">&#8731;</button>
+            <button id="cent">&#37;</button>
+            <button id="xy">x<sup>y</sup></button>
+          </section>
+        </section>
+      </div>
+      <div class="calculator">
+        <section class="display">
+          <div class="held-label">Running Total</div>
+          <div class="held-value"></div>
+          <div class="next-operation"></div>
+          <div class="next-value"></div>
+        </section>
+        <section class="controls">
+          <section class="memory">
+            <button class="clear-all">CLEAR</button>
+            <button class="clear-entry">CLEAR ENTRY</button>
+          </section>
+          <section class="operations">
+            <button class="add">&plus;</button>
+            <button class="subtract">&minus;</button>
+            <button class="multiply">&times;</button>
+            <button class="divide">/</button>
+            <button class="equals">&equals;</button>
+          </section>
+          <section class="digits">
+            <button id="seven">7</button>
+            <button id="eight">8</button>
+            <button id="nine">9</button>
+            <button id="four">4</button>
+            <button id="five">5</button>
+            <button id="six">6</button>
+            <button id="one">1</button>
+            <button id="two">2</button>
+            <button id="three">3</button>
+            <button class="decimal">.</button>
+            <button id="zero">0</button>
+          </section>
+        </section>
+      </div>
+      </div>
+    </main>
+  </body>
+</html>
