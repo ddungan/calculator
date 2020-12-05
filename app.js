@@ -94,15 +94,9 @@ function setHeldOperation(operation) {
 }
 
 function onAddClick() {
-    // if (heldValue !== null && heldOperation === add && nextValue === null) {
-    //     let tempHeldValue = heldValue;
-    //     add(heldValue, tempHeldValue);
-    //     updateDisplay()
-    // } else {
     setHeldOperation(add)
     $('.next-operation').text($((this), '.add').text());
     updateDisplay();
-
 }
 
 $('.add').click(onAddClick);
